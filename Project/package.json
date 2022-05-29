@@ -1,0 +1,22 @@
+{
+  "name": "lut_front_end",
+  "version": "1.0.0",
+  "description": "Responsive website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j00lie/LUT_front_end.git"
+  },
+  "author": "Joonas Liedes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j00lie/LUT_front_end/issues"
+  },
+  "homepage": "https://github.com/j00lie/LUT_front_end#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
