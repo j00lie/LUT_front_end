@@ -40,6 +40,16 @@
       height: 200px;
     }
   }
+  .about-info {
+    // if the screen is small stack the info grids
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
 }
 //smartphones
 @include mediaSm {
