@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Responsive website",
   "main": "index.js",
-  "homepage":"https://j00lie.github.io/LUT_FRONT_END",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
@@ -17,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/j00lie/LUT_front_end/issues"
   },
-
+  "homepage": "https://github.com/j00lie/LUT_front_end#readme",
   "dependencies": {
     "node-sass": "^7.0.1"
   }
