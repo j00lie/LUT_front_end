@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/j00lie/LUT_front_end/issues"
   },
-  "homepage": "https://github.com/j00lie/LUT_front_end#readme",
+  "homepage": "https://j00lie.github.io/LUT_front_end/",
   "dependencies": {
     "node-sass": "^7.0.1"
   }
