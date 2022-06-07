@@ -29,7 +29,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 5), 0.5);
   }
 }
 
@@ -74,6 +74,9 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
+  &#about {
+    overflow: hidden;
+  }
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3"; //these map to the layout
@@ -81,9 +84,6 @@ main {
   .bio-image {
     grid-area: bioimage;
     margin: auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
     border: $secondary-color 3px solid;
   }
   .bio {
@@ -112,11 +112,11 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
-  img {
-    width: 100%;
-    height: 9vh;
-    border: 3px #fff solid;
 
+  img {
+    border: 3px #fff solid;
+    height: fit-content;
+    width: fit-content;
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
