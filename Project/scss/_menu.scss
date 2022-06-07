@@ -84,13 +84,14 @@
       transform: translate3d(0, 0, 0); //slide in from the top
     }
     .portrait {
-      width: 450px;
-      height: 450px;
-      vertical-align: bottom;
-
-      background: url(../img/duck-small.jpg);
-      border-radius: 100%;
-      border: 3px $secondary-color;
+      width: 275px;
+      height: 275px;
+      background: url(../img/cvKuva.jpg);
+      border-radius: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 35%; // give realative centering position
+      border: solid 2px $secondary-color;
     }
   }
   .nav-item {

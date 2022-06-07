@@ -1,8 +1,8 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #6e6e6e;
+$secondary-color: #bcfd4c;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.5;
+$home-image: url(../img/background3.jpg);
+$background-opacity: 0.75;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -14,6 +14,7 @@ $background-opacity: 0.5;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      background-repeat: no-repeat;
       &:after {
         //pseudo-element so that overlay in html is not needed
         content: "";
@@ -32,7 +33,7 @@ $background-opacity: 0.5;
 //Set text colour
 
 @function set-text-color($color) {
-  @if (lightness($color) >40) {
+  @if (lightness($color) >60) {
     @return #000;
   } @else {
     @return #fff;
