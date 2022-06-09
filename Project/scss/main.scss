@@ -103,6 +103,9 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    .jobHeading {
+      color: $secondary-color;
+    }
   }
 }
 
@@ -115,8 +118,7 @@ main {
 
   img {
     border: 3px #fff solid;
-    height: fit-content;
-    width: fit-content;
+    width: 100%;
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
@@ -132,23 +134,35 @@ main {
   align-items: center;
   margin-top: 1rem;
 
-  div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 0.3rem;
-    @include easeOut;
+  .small-boxes {
+    div {
+      font-size: 2rem;
+      border: 3px #fff solid;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 0.3rem;
+      @include easeOut;
 
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
+      &:hover {
+        padding: 0.5rem 1.5rem;
+        background: $secondary-color;
         color: set-text-color($secondary-color);
+        span {
+          color: set-text-color($secondary-color);
+        }
       }
     }
   }
+  .large-box {
+    // add map to contact page
+    #map {
+      margin: auto;
+      width: 50vh;
+      height: 50vh;
+      z-index: -1;
+    }
+  }
 }
+
 //button styles
 .btn {
   display: block;
