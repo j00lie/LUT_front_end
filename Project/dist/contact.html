@@ -10,7 +10,19 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
     <title>Contact Me</title>
   </head>
   <body>
@@ -50,13 +62,16 @@
         minima.
       </h2>
       <div class="boxes">
-        <div>
-          <span class="text-secondary"> Email: </span>testEmail@test.com
+        <div class="small-boxes">
+          <div>
+            <span class="text-secondary">
+              Email: <a href="mailto:testEmail@test.com">testEmail@test.com</a>
+            </span>
+          </div>
+          <div><span class="text-secondary"> Phone: </span>12344565678</div>
         </div>
-        <div><span class="text-secondary"> Phone: </span>12344565678</div>
-        <div>
-          <span class="text-secondary"> Addres: </span>Fake street 1, Fake City,
-          Fake country
+        <div class="large-box">
+          <div id="map"></div>
         </div>
       </div>
     </main>

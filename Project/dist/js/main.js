@@ -14,7 +14,10 @@ const navItems = document.querySelectorAll('.nav-item');
 let showMenu = false; 
 
 
+
 menuBtn.addEventListener('click', toggleMenu); 
+
+
 
 
 function toggleMenu(){
@@ -34,7 +37,22 @@ function toggleMenu(){
         menuBranding.classList.remove('show');
         navItems.forEach(item => item.classList.remove('show'));
 
+        
         //set menu state
         showMenu = false; 
     }
 }
+
+
+    // Initialize and add the leaflet map: https://leafletjs.com/examples/quick-start/
+
+var map = L.map('map').setView([61.06544290519407, 28.094209853965232], 15);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+
+var marker = L.marker([61.06544290519407, 28.094209853965232]).addTo(map);
+
+
